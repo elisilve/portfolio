@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family: "Montserrat", sans-serif;
+
+// Font size
+$font-size-big: 2rem;
+$font-size-medium: 1.5rem;
+$font-size-small: 1.25rem;
+$font-size-smaller: 1.125rem;
+$font-size-base: 1rem;
+$font-size-tiny: 0.875rem;
+
+// Font weight
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Line height
+$line-height-tiny: 1.2;
+$line-height-small: 1.3;
+$line-height-medium: 1.4;
+$line-height-base: 1.5;
+$line-height-big: 1.6;
+
+// ======================
+//  COLOR SYSTEM
+// ======================
+
+// Base
+$black: #0B0B0D;
+$dark: #0F1115;
+$dark-soft: #121419;
+
+// Surface
+$surface: #15171C;
+$surface-light: #1A1D23;
+
+// Glass
+$color-glass-bg: rgba(255, 255, 255, 0.04);
+$color-glass-border: rgba(255, 255, 255, 0.08);
+$color-glass-highlight: rgba(255, 255, 255, 0.12);
+
+// ======================
+// PRIMARY (OTTANIO)
+// ======================
+
+$primary: #14B8A6;
+$color-primary-hover: #0D9488;
+$color-primary-soft: rgba(20, 184, 166, 0.1);
+$color-primary-glow: rgba(20, 184, 166, 0.25);
+
+// ======================
+// SECONDARY (RAME)
+// ======================
+
+$color-accent: #B87333;
+$color-accent-hover: #D28A45;
+$color-accent-soft: rgba(184, 115, 51, 0.1);
+$color-accent-glow: rgba(184, 115, 51, 0.3);
+
+// ======================
+// SUPPORT (VERDE BOSCO)
+// ======================
+
+$color-secondary: #1B4332;
+$color-secondary-light: #2D6A4F;
+$color-secondary-soft: rgba(27, 67, 50, 0.1);
+
+// ======================
+//  TEXT
+// ======================
+
+$color-text-primary: #FFFFFF;
+$color-text-secondary: #CFCFCF;
+$color-text-muted: #8A8F98;
+$color-text-disabled: #5C6068;
+
+// ======================
+//  BORDER
+// ======================
+
+$color-border: rgba(255, 255, 255, 0.08);
+$color-border-strong: rgba(255, 255, 255, 0.15);
+
+// ======================
+//  GRADIENTI
+// ======================
+
+$gradient-primary: linear-gradient(135deg, #14B8A6, #0D9488);
+$gradient-accent: linear-gradient(135deg, #B87333, #D28A45);
+
+// Glow backgrounds (hero / section)
+$gradient-bg-glow: radial-gradient(circle at 70% 30%, rgba(20,184,166,0.15), transparent 40%);
+// ======================
+// SHADOW / GLOW
+// ======================
+
+$shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+$glow-primary: 0 0 20px rgba(20, 184, 166, 0.25);
+$glow-accent: 0 0 20px rgba(184, 115, 51, 0.25);
+
+// ======================
+//  STATES
+// ======================
+
+$color-success: #22C55E;
+$color-warning: #F59E0B;
+$color-error: #EF4444;
+
+// ======================
+// BACKGROUND HELPERS
+// ======================
+
+$bg-main: $black;
+$bg-section: $dark;
+$bg-card: $surface;
+
+
+
