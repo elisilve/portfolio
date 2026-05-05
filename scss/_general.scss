@@ -144,3 +144,50 @@ small {
         font-size: 2.4rem;
     }
 }
+
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-semibold;
+    transition: 0.3s ease;
+
+    span {
+        font-size: 1.1rem;
+        transition: 0.3s ease;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+
+        span {
+            transform: translateX(4px);
+        }
+    }
+}
+
+.btn-primary {
+    background: $gradient-primary;
+    color: $color-text-primary;
+    box-shadow: $glow-primary;
+
+    &:hover {
+        box-shadow: 0 0 32px rgba(20, 184, 166, 0.38);
+    }
+}
+
+.btn-secondary {
+    border: 1px solid rgba(184, 115, 51, 0.45);
+    color: $color-accent-hover;
+    background: rgba(184, 115, 51, 0.06);
+
+    &:hover {
+        box-shadow: $glow-accent;
+    }
+}

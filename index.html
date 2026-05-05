@@ -7,24 +7,56 @@
 
     <title>Elisa Silvestrini | Web Designer</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <div id="header"></div>
 
-    <!-- MAIN -->
     <main>
+        <section class="hero">
+            <div class="container hero__container">
 
+                <div class="hero__content">
+                    <h1>
+                        Ciao sono <span>Elisa</span>
+                    </h1>
+
+                    <p class="hero__description">
+                        Sviluppatrice front-end con un approccio orientato al design.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="projects.html" class="btn-primary">Scopri i miei progetti <span>→</span></a>
+                        <a href="contact.html" class="btn-secondary">Contattami <span>→</span></a>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <span class="hero__orbit"></span>
+                    <span class="hero__dot hero__dot--primary"></span>
+                    <span class="hero__dot hero__dot--accent"></span>
+
+                    <div class="hero__glass-shape">
+                        <span></span>
+                    </div>
+
+                    <div class="hero__floating-card glass-card">
+                        <span class="status-dot"></span>
+                        <div>
+                            <strong>Front-end</strong>
+                            <small>Developer</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- Main JS -->
     <script src="js/main.js"></script>
 
 </body>

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     loadHeader();
+    initHeroAnimation();
 });
 
 function loadHeader() {
