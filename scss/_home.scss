@@ -251,6 +251,10 @@
             font-size: $font-size-tiny;
             line-height: $line-height-medium;
         }
+
+        .number {
+            display: flex;
+        }
     }
 
     @media (max-width: 1024px) {

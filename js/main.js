@@ -1,6 +1,6 @@
 $(document).ready(function () {
     loadHeader();
-    initHeroAnimation();
+    initCounters();
 });
 
 function loadHeader() {
@@ -47,5 +47,46 @@ function initHeaderOnScroll() {
 
     $(window).on("scroll", function () {
         $header.toggleClass("scrolled", $(window).scrollTop() > 20);
+    });
+}
+
+
+//animazione count
+function initCounters() {
+    const $counters = $(".counter");
+
+    console.log("Counters trovati:", $counters.length);
+    console.log("GSAP:", typeof gsap);
+    console.log("ScrollTrigger:", typeof ScrollTrigger);
+
+    if (!$counters.length) return;
+    if (typeof gsap === "undefined") return;
+    if (typeof ScrollTrigger === "undefined") return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    $counters.each(function () {
+        const counter = this;
+        const $counter = $(this);
+        const target = Number($counter.data("target"));
+
+        const obj = { value: 0 };
+
+        gsap.to(obj, {
+            value: target,
+            duration: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".intro",
+                start: "top 75%",
+                once: true
+            },
+            onUpdate: function () {
+                $counter.text(Math.floor(obj.value));
+            },
+            onComplete: function () {
+                $counter.text(target);
+            }
+        });
     });
 }
