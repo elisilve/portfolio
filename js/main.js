@@ -1,6 +1,7 @@
 $(document).ready(function () {
     loadHeader();
     initCounters();
+    initTitleAnimation();
 });
 
 function loadHeader() {
@@ -90,3 +91,22 @@ function initCounters() {
         });
     });
 }
+
+// Title animation tag h1 and h2
+$(document).ready(function () {
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                setTimeout(function () {
+                    $(entry.target).addClass("animate"); 
+                }, 500);
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 1 });
+
+    $("h1, h2").each(function () {
+        observer.observe(this); 
+    });
+});

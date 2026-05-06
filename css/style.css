@@ -85,7 +85,7 @@ h5,
 h6 {
   color: #FFFFFF;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: -0.05em;
 }
 
@@ -193,6 +193,19 @@ small {
 }
 .btn-secondary:hover {
   box-shadow: 0 0 20px rgba(184, 115, 51, 0.25);
+}
+
+h1,
+h2 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.4s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+h1.animate,
+h2.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .site-header {
@@ -585,7 +598,7 @@ small {
 .intro__logo span {
   color: #14B8A6;
 }
-.intro__text h2 {
+.intro__text h3 {
   font-size: 1.5rem;
   margin-bottom: 14px;
   letter-spacing: 0;
