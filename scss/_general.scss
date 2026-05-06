@@ -17,9 +17,29 @@ body {
     font-size: $font-size-base;
     font-weight: $font-weight-regular;
     line-height: $line-height-base;
-    background: $bg-main;
+    background-color: $bg-main;
     color: $color-text-primary;
     overflow-x: hidden;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    // glow ottanio alto
+    &::before {
+        background:radial-gradient(circle at top right,rgba(20, 184, 166, 0.14),transparent 35%);
+    }
+
+    // glow rame basso
+    &::after {
+        background: radial-gradient(circle at bottom left,rgba(184, 115, 51, 0.12),transparent 35%);
+    }
 }
 
 img,
