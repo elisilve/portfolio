@@ -1,5 +1,6 @@
 $(document).ready(function () {
     loadHeader();
+    loadFooter();
     initCounters();
     initTitleAnimation();
 });
@@ -110,3 +111,12 @@ $(document).ready(function () {
         observer.observe(this); 
     });
 });
+
+//Footer
+function loadFooter() {
+    const $footerPlaceholder = $("#footer");
+
+    if (!$footerPlaceholder.length) return;
+
+    $footerPlaceholder.load("components/footer.html");
+}
