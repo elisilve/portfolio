@@ -775,4 +775,52 @@ h2.animate {
   }
 }
 
+.cta {
+  padding: 80px 0 120px;
+}
+.cta__card {
+  min-height: 360px;
+  border-radius: 28px;
+  padding: 70px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cta__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 70%, rgba(20, 184, 166, 0.18), transparent 38%), radial-gradient(circle at 85% 20%, rgba(184, 115, 51, 0.16), transparent 38%);
+  z-index: -1;
+}
+.cta h2 {
+  margin-bottom: 22px;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: -0.07em;
+}
+.cta__description {
+  margin-bottom: 30px;
+  max-width: 620px;
+  color: #CFCFCF;
+}
+.cta .btn-primary {
+  margin-top: 4px;
+}
+@media (max-width: 640px) {
+  .cta {
+    padding: 60px 0 90px;
+  }
+  .cta__card {
+    min-height: 300px;
+    padding: 48px 24px;
+  }
+  .cta h2 {
+    font-size: 2.8rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
