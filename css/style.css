@@ -796,6 +796,9 @@ h2.animate {
   border: 1px solid rgba(20, 184, 166, 0.35);
   font-size: 1.4rem;
 }
+.skills__icon i {
+  font-size: 1.2rem;
+}
 .skills__tags {
   display: flex;
   flex-wrap: wrap;
